@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Коллы и раскидки CS2 на Mirage, Dust II и Inferno">
+<title>Атлас CS2 — коллы и раскидки</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap brand"><span class="mark">CS<span>2</span></span><span>Атлас CS2</span><span class="brand-note">Твой следующий раунд начинается здесь</span></div></header>
+<main class="wrap">
+<section class="intro"><div class="intro-copy"><p class="eyebrow">ТАКТИЧЕСКИЙ СПРАВОЧНИК / COUNTER-STRIKE 2</p><h1>Знай карту.<br><span>Решай раунд.</span></h1><p class="lead">Коллы и раскидки, которые всегда под рукой.<br>Найди позицию, подготовь гранату, сыграй с командой.</p><div class="stats"><span><strong>3</strong> карты</span><span><strong>60</strong> коллов</span><span><strong>311</strong> раскидок</span></div></div><div class="hero-radar" aria-hidden="true"><img src="assets/radar-0.jpg" alt=""><span class="radar-label">MIRAGE / ТАКТИЧЕСКИЙ ОБЗОР</span></div></section>
+<nav class="map-tabs" aria-label="Быстрый выбор карты"><button type="button" data-map="" aria-pressed="true">Все карты</button><button type="button" data-map="Mirage" aria-pressed="false">Mirage</button><button type="button" data-map="Dust II" aria-pressed="false">Dust II</button><button type="button" data-map="Inferno" aria-pressed="false">Inferno</button></nav>
+<form class="filters" id="filters" role="search">
+<label class="query">Поиск<input type="search" name="q" placeholder="Например, окно, jungle или банан"></label>
+<div class="selects">
+<label>Карта<select name="map"><option value="">Все карты</option><option>Mirage</option><option>Dust II</option><option>Inferno</option></select></label>
+<label>Сторона<select name="side"><option value="">Обе стороны</option><option value="T">T · Атака</option><option value="CT">CT · Защита</option></select></label>
+<label>Зона<select name="zone"><option value="">Все зоны</option><option value="A">Плент A</option><option value="B">Плент B</option><option value="M">Мид</option></select></label>
+<label>Тип<select name="kind"><option value="">Коллы и раскидки</option><option value="call">Коллы</option><option value="nade">Все раскидки</option><option value="smoke">Смоки</option><option value="flash">Флешки</option><option value="molotov">Молотовы</option></select></label>
+</div>
+</form>
+<section aria-label="Результаты поиска">
+<div class="results"><p id="status" aria-live="polite"></p><button type="button" id="reset">Сбросить фильтры</button></div>
+<div id="cards" class="cards"></div>
+<div class="pager"><button id="prev" type="button">Назад</button><span id="page"></span><button id="next" type="button">Дальше</button></div>
+</section>
+</main><footer class="wrap footer"><span>CS2 ATLAS <span class="footer-dot">/</span> Играй осознанно.</span><span>Неофициальный справочник · Источники внутри карточек</span></footer>
+<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-head"><button id="close" type="button">Закрыть</button></div><div id="detail-content"></div></dialog>
+</body></html>
